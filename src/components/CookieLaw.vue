@@ -149,6 +149,7 @@
       },
       close () {
         this.isOpen = false
+	this.$emit('close')
       },
       open () {
         if (!this.getVisited() === true) {
